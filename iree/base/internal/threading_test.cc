@@ -15,8 +15,11 @@
 #include "iree/base/internal/threading.h"
 
 #include <chrono>
+#include <cstring>
 #include <thread>
 
+#include "iree/base/internal/atomics.h"
+#include "iree/base/internal/status.h"
 #include "iree/base/internal/synchronization.h"
 #include "iree/base/internal/threading_impl.h"  // to test the override list
 #include "iree/testing/gtest.h"

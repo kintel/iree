@@ -12,12 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#include <stdbool.h>
+#include <stdint.h>
 #include <string.h>
 
+#include "iree/base/api.h"
 #include "iree/base/internal/math.h"
-#include "iree/base/tracing.h"
 #include "iree/vm/api.h"
 #include "iree/vm/bytecode_dispatch_util.h"
+#include "iree/vm/bytecode_module_impl.h"
 #include "iree/vm/ops.h"
 
 //===----------------------------------------------------------------------===//

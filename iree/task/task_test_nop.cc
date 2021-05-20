@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#include "iree/task/task.h"
 #include "iree/task/testing/task_test.h"
 #include "iree/testing/gtest.h"
 #include "iree/testing/status_matchers.h"

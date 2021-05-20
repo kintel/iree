@@ -14,6 +14,9 @@
 
 #include "iree/hal/local/local_executable_cache.h"
 
+#include <stdbool.h>
+#include <stddef.h>
+
 #include "iree/base/tracing.h"
 
 typedef struct {

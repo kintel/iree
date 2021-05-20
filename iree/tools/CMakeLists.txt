@@ -90,12 +90,15 @@ iree_cc_binary(
     iree::base::core_headers
     iree::base::internal::file_io
     iree::base::internal::flags
+    iree::base::logging
     iree::base::status
     iree::base::tracing
+    iree::hal
     iree::hal::drivers
     iree::modules::hal
     iree::testing::gtest
     iree::tools::utils::vm_util
+    iree::vm
     iree::vm::bytecode_module
   TESTONLY
 )

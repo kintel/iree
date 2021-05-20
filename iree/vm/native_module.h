@@ -21,6 +21,7 @@
 
 #include "iree/base/api.h"
 #include "iree/vm/module.h"
+#include "iree/vm/stack.h"
 
 #ifdef __cplusplus
 extern "C" {

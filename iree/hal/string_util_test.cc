@@ -12,10 +12,17 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#include <cstddef>
+#include <cstdint>
+#include <string>
+#include <type_traits>
+#include <utility>
 #include <vector>
 
 #include "absl/strings/string_view.h"
 #include "absl/types/span.h"
+#include "iree/base/api.h"
+#include "iree/base/logging.h"
 #include "iree/base/status.h"
 #include "iree/hal/api.h"
 #include "iree/testing/gtest.h"

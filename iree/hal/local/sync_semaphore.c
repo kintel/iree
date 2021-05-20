@@ -15,6 +15,9 @@
 #include "iree/hal/local/sync_semaphore.h"
 
 #include <inttypes.h>
+#include <stdbool.h>
+#include <stddef.h>
+#include <string.h>
 
 #include "iree/base/tracing.h"
 

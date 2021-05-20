@@ -14,9 +14,15 @@
 
 #include "iree/base/internal/dynamic_library.h"
 
+#include <cstdlib>
+#include <ostream>
 #include <string>
+#include <type_traits>
+#include <utility>
 
 #include "iree/base/internal/file_io.h"
+#include "iree/base/internal/status.h"
+#include "iree/base/logging.h"
 #include "iree/base/target_platform.h"
 #include "iree/base/testing/dynamic_library_test_library_embed.h"
 #include "iree/testing/gtest.h"

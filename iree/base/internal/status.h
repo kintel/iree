@@ -20,8 +20,10 @@
 #endif  // !__cplusplus
 
 #include <cstdint>
+#include <cstring>
 #include <memory>
 #include <string>
+#include <type_traits>
 
 #include "iree/base/api.h"
 #include "iree/base/attributes.h"

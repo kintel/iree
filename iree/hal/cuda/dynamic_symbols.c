@@ -14,7 +14,7 @@
 
 #include "iree/hal/cuda/dynamic_symbols.h"
 
-#include <stddef.h>
+#include <string.h>
 
 #include "iree/base/internal/dynamic_library.h"
 #include "iree/base/target_platform.h"

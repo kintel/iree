@@ -14,11 +14,12 @@
 
 #include "iree/vm/buffer.h"
 
-#include "iree/base/api.h"
+#include <cstddef>
+
+#include "iree/base/logging.h"
+#include "iree/base/status.h"
 #include "iree/testing/gtest.h"
-#include "iree/testing/status_matchers.h"
 #include "iree/vm/builtin_types.h"
-#include "iree/vm/ref_cc.h"
 
 namespace {
 

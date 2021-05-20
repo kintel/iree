@@ -12,8 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#include <stdlib.h>
+#include <string.h>
+
 #include "iree/base/api.h"
-#include "iree/base/target_platform.h"
 #include "iree/base/tracing.h"
 
 IREE_API_EXPORT iree_status_t iree_allocator_malloc(

@@ -14,7 +14,6 @@
 
 #include "iree/base/internal/synchronization.h"
 
-#include <chrono>
 #include <thread>
 
 #include "iree/testing/gtest.h"

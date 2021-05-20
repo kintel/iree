@@ -122,6 +122,7 @@ cc_library(
         "dynamic_symbol_tables.h",
     ],
     deps = [
+        "//iree/base",
         "//iree/base:core_headers",
         "//iree/base:status",
         "//iree/base:tracing",

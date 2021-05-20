@@ -14,9 +14,12 @@
 
 #include "iree/hal/semaphore.h"
 
+#include <stddef.h>
+
 #include "iree/base/tracing.h"
 #include "iree/hal/detail.h"
 #include "iree/hal/device.h"
+#include "iree/hal/resource.h"
 
 #define _VTABLE_DISPATCH(semaphore, method_name) \
   IREE_HAL_VTABLE_DISPATCH(semaphore, iree_hal_semaphore, method_name)

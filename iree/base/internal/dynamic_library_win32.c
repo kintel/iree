@@ -12,7 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#include <stdint.h>
 #include <stdio.h>
+#include <string.h>
 
 #include "iree/base/internal/atomics.h"
 #include "iree/base/internal/call_once.h"
@@ -30,6 +32,7 @@
 #define IREE_HAVE_DYNAMIC_LIBRARY_PDB_SUPPORT 1
 #pragma warning(disable : 4091)
 #include <dbghelp.h>
+
 void IREEDbgHelpLock(void);
 void IREEDbgHelpUnlock(void);
 #endif  // TRACY_ENABLE

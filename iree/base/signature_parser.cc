@@ -14,6 +14,8 @@
 
 #include "iree/base/signature_parser.h"
 
+#include <cstddef>
+
 #include "absl/strings/numbers.h"
 #include "absl/strings/str_cat.h"
 

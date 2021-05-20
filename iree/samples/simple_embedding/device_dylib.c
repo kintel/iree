@@ -14,6 +14,8 @@
 
 // A example of setting up the the dylib driver.
 
+#include <stddef.h>
+
 #include "iree/base/api.h"
 #include "iree/hal/api.h"
 #include "iree/hal/local/executable_loader.h"
@@ -21,6 +23,7 @@
 #include "iree/hal/local/loaders/legacy_library_loader.h"
 #include "iree/hal/local/task_device.h"
 #include "iree/task/api.h"
+#include "iree/task/executor.h"
 
 iree_status_t create_sample_device(iree_hal_device_t** device) {
   // Set paramters for the device created in the next step.

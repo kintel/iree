@@ -12,9 +12,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#include <string>
+#include <vector>
+
+#include "iree/base/api.h"
+#include "iree/base/config.h"
+#include "iree/hal/api.h"
 #include "iree/hal/cts/cts_test_base.h"
 #include "iree/hal/testing/driver_registry.h"
 #include "iree/testing/gtest.h"
+#include "iree/testing/status_matchers.h"
 
 namespace iree {
 namespace hal {

@@ -53,5 +53,6 @@ cc_library(
         "//iree/testing:gtest",
         "//iree/vm",
         "//iree/vm:cc",
+        "@com_google_absl//absl/types:span",
     ],
 )

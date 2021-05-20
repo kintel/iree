@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#include "iree/base/api.h"
 #include "iree/base/target_platform.h"
 #include "iree/base/tracing.h"
 #include "iree/hal/local/elf/platform.h"

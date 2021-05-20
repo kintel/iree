@@ -18,13 +18,16 @@ package(
     licenses = ["notice"],  # Apache 2.0
 )
 
-# TODO(b/146898896): Refactor these into more coherent packages.
+# TODO(benvanik): fold these into iree/runtime and use that instead.
 cc_library(
     name = "vm_util",
     srcs = ["vm_util.cc"],
     hdrs = ["vm_util.h"],
     deps = [
+        "//iree/base",
+        "//iree/base:logging",
         "//iree/base:status",
+        "//iree/base:tracing",
         "//iree/base/internal:file_io",
         "//iree/hal",
         "//iree/modules/hal",

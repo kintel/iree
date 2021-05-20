@@ -14,6 +14,10 @@
 
 #include "iree/runtime/call.h"
 
+#include <stddef.h>
+#include <string.h>
+
+#include "iree/base/api.h"
 #include "iree/modules/hal/hal_module.h"
 #include "iree/runtime/session.h"
 

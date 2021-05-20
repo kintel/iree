@@ -14,6 +14,9 @@
 
 #include "iree/runtime/session.h"
 
+#include <stddef.h>
+#include <string.h>
+
 #include "iree/base/internal/atomics.h"
 #include "iree/base/internal/file_io.h"
 #include "iree/base/tracing.h"

@@ -14,6 +14,15 @@
 
 #include "iree/base/internal/file_io.h"
 
+#include <cstdlib>
+#include <cstring>
+#include <ostream>
+#include <string>
+#include <type_traits>
+#include <utility>
+
+#include "iree/base/internal/status.h"
+#include "iree/base/logging.h"
 #include "iree/testing/gtest.h"
 #include "iree/testing/status_matchers.h"
 

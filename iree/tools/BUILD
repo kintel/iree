@@ -50,15 +50,18 @@ cc_binary(
     deps = [
         "//iree/base",
         "//iree/base:core_headers",
+        "//iree/base:logging",
         "//iree/base:status",
         "//iree/base:tracing",
         "//iree/base/internal:file_io",
         "//iree/base/internal:flags",
+        "//iree/hal",
         "//iree/hal/drivers",
         "//iree/modules/check:native_module",
         "//iree/modules/hal",
         "//iree/testing:gtest",
         "//iree/tools/utils:vm_util",
+        "//iree/vm",
         "//iree/vm:bytecode_module",
     ],
 )

@@ -102,6 +102,7 @@ iree_cc_library(
     "vulkan_headers.h"
   DEPS
     Vulkan::Headers
+    iree::base
     iree::base::core_headers
     iree::base::internal::dynamic_library
     iree::base::status

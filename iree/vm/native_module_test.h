@@ -12,8 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#include <assert.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <string.h>
+
+#include "iree/base/api.h"
 #include "iree/vm/context.h"
 #include "iree/vm/instance.h"
+#include "iree/vm/module.h"
 #include "iree/vm/native_module.h"
 #include "iree/vm/ref.h"
 #include "iree/vm/stack.h"
@@ -79,6 +86,7 @@ static iree_status_t call_shim_i32_i32(iree_vm_stack_t* stack,
 
 struct module_a_s;
 struct module_a_state_s;
+
 typedef struct module_a_s module_a_t;
 typedef struct module_a_state_s module_a_state_t;
 
@@ -143,6 +151,7 @@ static iree_status_t module_a_create(iree_allocator_t allocator,
 
 struct module_b_s;
 struct module_b_state_s;
+
 typedef struct module_b_s module_b_t;
 typedef struct module_b_state_s module_b_state_t;
 

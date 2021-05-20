@@ -17,6 +17,7 @@
 #include <utility>
 
 #include "iree/base/internal/file_io.h"
+#include "iree/base/logging.h"
 #include "iree/base/status.h"
 #include "iree/schemas/bytecode_module_def_json_printer.h"
 #include "iree/tools/utils/vm_util.h"

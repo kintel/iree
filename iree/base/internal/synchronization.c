@@ -15,6 +15,7 @@
 #include "iree/base/internal/synchronization.h"
 
 #include <assert.h>
+#include <string.h>
 
 #if IREE_SYNCHRONIZATION_DISABLE_UNSAFE
 

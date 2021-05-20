@@ -14,11 +14,13 @@
 
 #include "iree/task/executor.h"
 
-#include <thread>
+#include <cstddef>
 
 #include "iree/base/internal/prng.h"
+#include "iree/base/logging.h"
+#include "iree/base/status.h"
+#include "iree/base/tracing.h"
 #include "iree/testing/gtest.h"
-#include "iree/testing/status_matchers.h"
 
 namespace {
 

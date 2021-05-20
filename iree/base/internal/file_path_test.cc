@@ -14,6 +14,8 @@
 
 #include "iree/base/internal/file_path.h"
 
+#include <string>
+
 #include "iree/base/target_platform.h"
 #include "iree/testing/gtest.h"
 

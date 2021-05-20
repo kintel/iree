@@ -14,6 +14,9 @@
 
 #include "iree/vm/native_module_test.h"
 
+#include <vector>
+
+#include "iree/base/logging.h"
 #include "iree/base/status.h"
 #include "iree/testing/gtest.h"
 #include "iree/testing/status_matchers.h"
@@ -22,6 +25,7 @@
 #include "iree/vm/invocation.h"
 #include "iree/vm/list.h"
 #include "iree/vm/ref_cc.h"
+#include "iree/vm/value.h"
 
 namespace iree {
 namespace {

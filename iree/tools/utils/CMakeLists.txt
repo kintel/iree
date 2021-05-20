@@ -20,8 +20,11 @@ iree_cc_library(
   DEPS
     absl::span
     absl::strings
+    iree::base
     iree::base::internal::file_io
+    iree::base::logging
     iree::base::status
+    iree::base::tracing
     iree::hal
     iree::modules::hal
     iree::vm

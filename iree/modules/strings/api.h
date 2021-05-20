@@ -15,6 +15,9 @@
 #ifndef IREE_MODULES_STRINGS_STRINGS_API_H_
 #define IREE_MODULES_STRINGS_STRINGS_API_H_
 
+#include <stddef.h>
+#include <stdint.h>
+
 #include "iree/base/api.h"
 
 #ifdef __cplusplus

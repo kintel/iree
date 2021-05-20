@@ -22,6 +22,7 @@ iree_cc_library(
     iree::base::core_headers
     iree::base::internal::atomic_slist
     iree::base::internal::synchronization
+    iree::base::tracing
   PUBLIC
 )
 
@@ -156,6 +157,7 @@ iree_cc_library(
   DEPS
     ::arena
     ::event_pool
+    ::executable_library
     ::local
     iree::base
     iree::base::core_headers

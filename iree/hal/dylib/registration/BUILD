@@ -37,8 +37,10 @@ cc_library(
         "IREE_HAL_HAVE_DYLIB_DRIVER_MODULE=1",
     ],
     deps = [
+        "//iree/base",
         "//iree/base/internal:flags",
         "//iree/hal",
+        "//iree/hal/local",
         "//iree/hal/local:task_driver",
         "//iree/hal/local/loaders:embedded_library_loader",
         "//iree/hal/local/loaders:legacy_library_loader",
@@ -54,7 +56,9 @@ cc_library(
         "IREE_HAL_HAVE_DYLIB_SYNC_DRIVER_MODULE=1",
     ],
     deps = [
+        "//iree/base",
         "//iree/hal",
+        "//iree/hal/local",
         "//iree/hal/local:sync_driver",
         "//iree/hal/local/loaders:legacy_library_loader",
     ],

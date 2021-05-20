@@ -14,16 +14,15 @@
 
 #include "iree/tools/utils/vm_util.h"
 
-#include <sstream>
-
 #include "absl/strings/str_cat.h"
-#include "iree/base/api.h"
+#include "iree/base/logging.h"
 #include "iree/hal/api.h"
 #include "iree/hal/vmvx/registration/driver_module.h"
 #include "iree/modules/hal/hal_module.h"
 #include "iree/testing/gtest.h"
 #include "iree/testing/status_matchers.h"
 #include "iree/vm/api.h"
+#include "iree/vm/ref_cc.h"
 
 namespace iree {
 namespace {

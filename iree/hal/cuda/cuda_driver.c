@@ -12,7 +12,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#include <stdint.h>
+#include <string.h>
+
+#include "iree/base/api.h"
 #include "iree/base/tracing.h"
+#include "iree/hal/api.h"
 #include "iree/hal/cuda/api.h"
 #include "iree/hal/cuda/cuda_device.h"
 #include "iree/hal/cuda/dynamic_symbols.h"

@@ -12,7 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#include <cstddef>
+
 #include "benchmark/benchmark.h"
+#include "iree/base/api.h"
 #include "iree/base/internal/fpu_state.h"
 
 namespace {

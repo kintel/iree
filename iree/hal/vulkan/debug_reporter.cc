@@ -14,6 +14,10 @@
 
 #include "iree/hal/vulkan/debug_reporter.h"
 
+#include <cstddef>
+#include <ostream>
+
+#include "iree/base/logging.h"
 #include "iree/base/tracing.h"
 #include "iree/hal/vulkan/status_util.h"
 

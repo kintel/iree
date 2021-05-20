@@ -36,6 +36,7 @@ cc_library(
         "//iree/base:tracing",
         "//iree/hal",
         "//iree/hal/local",
+        "//iree/hal/local:executable_library",
         "//iree/hal/local/elf:elf_module",
     ],
 )
@@ -55,6 +56,7 @@ cc_library(
         "//iree/base/internal:flatcc",
         "//iree/hal",
         "//iree/hal/local",
+        "//iree/hal/local:executable_library",
         "//iree/schemas:dylib_executable_def_c_fbs",
     ],
 )
@@ -71,6 +73,7 @@ cc_library(
         "//iree/base:tracing",
         "//iree/hal",
         "//iree/hal/local",
+        "//iree/hal/local:executable_library",
     ],
 )
 
@@ -88,6 +91,7 @@ cc_library(
         "//iree/base/internal:flatcc",
         "//iree/hal",
         "//iree/hal/local",
+        "//iree/hal/local:executable_library",
     ],
 )
 
@@ -110,6 +114,7 @@ cc_library(
         "//iree/base:tracing",
         "//iree/hal",
         "//iree/hal/local",
+        "//iree/hal/local:executable_library",
         "//iree/modules/vmvx",
         "//iree/vm",
         "//iree/vm:bytecode_module",

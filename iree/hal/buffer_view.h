@@ -17,6 +17,7 @@
 
 #include <stdbool.h>
 #include <stdint.h>
+#include <stdio.h>
 
 #include "iree/base/api.h"
 #include "iree/hal/buffer.h"

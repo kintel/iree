@@ -14,6 +14,9 @@
 
 #include "iree/hal/vulkan/native_descriptor_set.h"
 
+#include <cstddef>
+
+#include "iree/base/api.h"
 #include "iree/base/tracing.h"
 
 using namespace iree::hal::vulkan;

@@ -56,6 +56,7 @@
 #include <functional>
 #include <iterator>
 #include <limits>
+#include <utility>
 
 #include "iree/base/logging.h"
 

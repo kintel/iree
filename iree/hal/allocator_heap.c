@@ -12,10 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#include <stddef.h>
+
+#include "iree/base/api.h"
 #include "iree/base/tracing.h"
 #include "iree/hal/allocator.h"
+#include "iree/hal/buffer.h"
 #include "iree/hal/buffer_heap_impl.h"
-#include "iree/hal/detail.h"
+#include "iree/hal/resource.h"
 
 typedef struct iree_hal_heap_allocator_s {
   iree_hal_resource_t resource;

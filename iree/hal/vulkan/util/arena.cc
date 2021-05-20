@@ -14,7 +14,7 @@
 
 #include "iree/hal/vulkan/util/arena.h"
 
-#include <memory>
+#include <cstdlib>
 
 #include "iree/base/attributes.h"
 #include "iree/base/logging.h"

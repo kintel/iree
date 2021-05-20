@@ -14,6 +14,8 @@
 
 #include "iree/hal/local/task_event.h"
 
+#include <stddef.h>
+
 #include "iree/base/tracing.h"
 
 typedef struct {

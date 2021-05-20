@@ -14,7 +14,12 @@
 
 #include "iree/vm/list.h"
 
+#include <cstdint>
+#include <cstring>
+
 #include "iree/base/api.h"
+#include "iree/base/logging.h"
+#include "iree/base/status.h"
 #include "iree/testing/gtest.h"
 #include "iree/testing/status_matchers.h"
 #include "iree/vm/builtin_types.h"

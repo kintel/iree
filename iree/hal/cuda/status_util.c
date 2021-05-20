@@ -14,6 +14,8 @@
 
 #include "iree/hal/cuda/status_util.h"
 
+#include <stddef.h>
+
 #include "iree/hal/cuda/dynamic_symbols.h"
 
 iree_status_t iree_hal_cuda_result_to_status(

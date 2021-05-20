@@ -16,6 +16,7 @@
 #define IREE_BASE_INTERNAL_FPU_STATE_H_
 
 #include <stddef.h>
+#include <stdint.h>
 
 #include "iree/base/api.h"
 #include "iree/base/target_platform.h"

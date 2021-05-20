@@ -14,6 +14,9 @@
 
 #include "iree/runtime/instance.h"
 
+#include <stddef.h>
+#include <string.h>
+
 #include "iree/base/internal/atomics.h"
 #include "iree/base/tracing.h"
 #include "iree/hal/api.h"

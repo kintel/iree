@@ -14,6 +14,11 @@
 
 #include "iree/hal/vulkan/vma_buffer.h"
 
+#include <cstddef>
+#include <cstdint>
+#include <cstring>
+
+#include "iree/base/api.h"
 #include "iree/base/tracing.h"
 #include "iree/hal/vulkan/status_util.h"
 

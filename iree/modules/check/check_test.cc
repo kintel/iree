@@ -14,6 +14,10 @@
 
 // Tests that our bytecode module can call through into our native module.
 
+#include <cstddef>
+#include <cstdint>
+#include <vector>
+
 #include "absl/types/span.h"
 #include "iree/base/api.h"
 #include "iree/base/internal/math.h"
@@ -26,7 +30,6 @@
 #include "iree/testing/gtest.h"
 #include "iree/testing/status_matchers.h"
 #include "iree/vm/api.h"
-#include "iree/vm/bytecode_module.h"
 #include "iree/vm/ref_cc.h"
 
 namespace iree {

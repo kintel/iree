@@ -12,7 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#include <cstddef>
+#include <cstdint>
+#include <cstring>
+#include <string>
+#include <utility>
+
 #include "benchmark/benchmark.h"
+#include "iree/base/api.h"
 #include "iree/base/tracing.h"
 #include "iree/testing/benchmark.h"
 

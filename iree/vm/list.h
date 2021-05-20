@@ -18,6 +18,7 @@
 #include <stdint.h>
 
 #include "iree/base/api.h"
+#include "iree/base/api.h"
 #include "iree/vm/ref.h"
 #include "iree/vm/type_def.h"
 #include "iree/vm/value.h"

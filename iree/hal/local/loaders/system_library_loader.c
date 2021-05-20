@@ -14,11 +14,15 @@
 
 #include "iree/hal/local/loaders/system_library_loader.h"
 
-#include "iree/base/tracing.h"
-#include "iree/hal/local/local_executable.h"
+#include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
 
-// flatcc schemas:
-#include "iree/base/internal/flatcc.h"
+#include "iree/base/tracing.h"
+#include "iree/hal/api.h"
+#include "iree/hal/local/executable_library.h"
+#include "iree/hal/local/local_executable.h"
+#include "iree/hal/local/local_executable_layout.h"
 
 //===----------------------------------------------------------------------===//
 // iree_hal_system_executable_t

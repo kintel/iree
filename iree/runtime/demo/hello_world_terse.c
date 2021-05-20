@@ -12,6 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+#include <stdio.h>
+
 #include "iree/runtime/api.h"
 #include "iree/runtime/testdata/simple_mul_module_c.h"
 

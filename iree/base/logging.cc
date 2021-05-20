@@ -14,7 +14,9 @@
 
 #include "iree/base/logging.h"
 
-#include <string>
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 #ifdef __ANDROID__
 #include <android/log.h>
