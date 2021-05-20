@@ -23,7 +23,7 @@ namespace mlir {
 namespace iree_compiler {
 namespace IREE {
 
-#include "iree/compiler/Dialect/Vulkan/IR/VulkanAttributes.h.inc"
+#include "iree/compiler/Dialect/Vulkan/IR/VulkanAttributes.h.inc"  // IWYU pragma: export
 
 namespace Vulkan {
 

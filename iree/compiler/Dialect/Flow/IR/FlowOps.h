@@ -34,7 +34,7 @@
 #include "mlir/Interfaces/ViewLikeInterface.h"
 
 #define GET_OP_CLASSES
-#include "iree/compiler/Dialect/Flow/IR/FlowOps.h.inc"
+#include "iree/compiler/Dialect/Flow/IR/FlowOps.h.inc"  // IWYU pragma: export
 
 namespace mlir {
 namespace iree_compiler {

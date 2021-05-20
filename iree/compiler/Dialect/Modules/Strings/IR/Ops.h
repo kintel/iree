@@ -22,6 +22,6 @@
 #include "mlir/Interfaces/SideEffectInterfaces.h"
 
 #define GET_OP_CLASSES
-#include "iree/compiler/Dialect/Modules/Strings/IR/Ops.h.inc"
+#include "iree/compiler/Dialect/Modules/Strings/IR/Ops.h.inc"  // IWYU pragma: export
 
 #endif  // IREE_COMPILER_DIALECT_MODULES_STRINGS_IR_OPS_H_
