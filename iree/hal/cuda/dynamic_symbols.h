@@ -32,7 +32,7 @@ typedef struct {
 
 #define CU_PFN_DECL(cudaSymbolName, ...) \
   CUresult (*cudaSymbolName)(__VA_ARGS__);
-#include "iree/hal/cuda/dynamic_symbol_tables.h"
+#include "iree/hal/cuda/dynamic_symbol_tables.h"  // IWYU pragma: export
 #undef CU_PFN_DECL
 } iree_hal_cuda_dynamic_symbols_t;
 

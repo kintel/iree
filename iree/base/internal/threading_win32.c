@@ -12,8 +12,9 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// NOTE: must be first to ensure that we can define settings for all includes.
+// clang-format off: must be included before all other headers.
 #include "iree/base/internal/threading_impl.h"
+// clang-format on
 
 #if defined(IREE_PLATFORM_WINDOWS)
 
