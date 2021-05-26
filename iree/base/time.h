@@ -72,7 +72,7 @@ typedef enum {
 } iree_timeout_type_t;
 
 // A timeout defined either by an absolute or relative value.
-typedef struct {
+typedef struct iree_timeout_t {
   iree_timeout_type_t type;
   iree_time_t nanos;
 } iree_timeout_t;

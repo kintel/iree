@@ -236,7 +236,7 @@ void VmVariantList::PushList(VmVariantList& other) {
 
 void VmVariantList::PushBufferView(HalDevice& device,
                                    py::object py_buffer_object,
-                                   iree_hal_element_type_e element_type) {
+                                   iree_hal_element_type_t element_type) {
   // Request a view of the buffer (use the raw python C API to avoid some
   // allocation and copying at the pybind level).
   Py_buffer py_view;
@@ -510,7 +510,7 @@ void SetupVmBindings(pybind11::module m) {
   m.def("create_strings_module", &CreateStringsModule);
   m.def("create_tensorlist_module", &CreateTensorListModule);
 
-  py::enum_<enum iree_vm_function_linkage_e>(m, "Linkage")
+  py::enum_<enum iree_vm_function_linkage_t>(m, "Linkage")
       .value("INTERNAL", IREE_VM_FUNCTION_LINKAGE_INTERNAL)
       .value("IMPORT", IREE_VM_FUNCTION_LINKAGE_IMPORT)
       .value("EXPORT", IREE_VM_FUNCTION_LINKAGE_EXPORT)

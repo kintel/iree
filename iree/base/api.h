@@ -568,12 +568,11 @@ IREE_API_EXPORT void iree_status_fprint(FILE* file, iree_status_t status);
 
 // Known versions of the API that can be referenced in code.
 // Out-of-bounds values are possible in forward-versioned changes.
-enum iree_api_version_e {
-  IREE_API_VERSION_0 = 0u,
+typedef enum {
+  IREE_API_VERSION_0 = 0,
   // Always set to the latest version of the library from source.
   IREE_API_VERSION_LATEST = IREE_API_VERSION_0,
-};
-typedef uint32_t iree_api_version_t;
+} iree_api_version_t;
 
 // Checks whether the |expected_version| of the caller matches the implemented
 // version of |out_actual_version|. Forward compatibility of the API is

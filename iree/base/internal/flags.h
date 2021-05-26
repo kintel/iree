@@ -89,10 +89,11 @@ extern "C" {
 // Flag definition
 //===----------------------------------------------------------------------===//
 
-typedef enum {
-  IREE_FLAG_DUMP_MODE_DEFAULT = 0,
+enum iree_flag_dump_mode_bits_t {
+  IREE_FLAG_DUMP_MODE_DEFAULT = 0u,
   IREE_FLAG_DUMP_MODE_VERBOSE = 1u << 0,
-} iree_flag_dump_mode_t;
+};
+typedef uint32_t iree_flag_dump_mode_t;
 
 #define IREE_FLAG_CTYPE_bool bool
 #define IREE_FLAG_CTYPE_int32_t int32_t
@@ -221,7 +222,7 @@ int iree_flag_register(const char* file, int line, iree_flag_type_t type,
 //===----------------------------------------------------------------------===//
 
 // Controls how flag parsing is performed.
-enum iree_flags_parse_mode_e {
+enum iree_flags_parse_mode_bits_t {
   IREE_FLAGS_PARSE_MODE_DEFAULT = 0,
   // Do not error out on undefined flags; leave them in the list.
   // Useful when needing to chain multiple flag parsers together.

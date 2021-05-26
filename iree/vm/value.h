@@ -43,7 +43,7 @@ typedef enum {
 #define IREE_VM_VALUE_STORAGE_SIZE 8
 
 // A variant value type.
-typedef struct iree_vm_value {
+typedef struct iree_vm_value_t {
   iree_vm_value_type_t type;
   union {
     int8_t i8;

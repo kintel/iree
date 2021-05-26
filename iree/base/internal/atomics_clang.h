@@ -20,7 +20,7 @@
 extern "C" {
 #endif
 
-typedef enum iree_memory_order_e {
+typedef enum {
   iree_memory_order_relaxed = __ATOMIC_RELAXED,
   iree_memory_order_consume = __ATOMIC_CONSUME,
   iree_memory_order_acquire = __ATOMIC_ACQUIRE,
