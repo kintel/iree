@@ -289,28 +289,11 @@ if(CMAKE_CXX_FLAGS AND "${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
   string(REPLACE "/GR" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
 endif()
 
-if(NOT ANDROID AND ${IREE_ENABLE_THREADING})
-  iree_select_compiler_opts(_IREE_PTHREADS_LINKOPTS
-    CLANG_OR_GCC
-      "-lpthread"
-  )
-else()
-  # Android provides its own pthreads support with no linking required.
-endif()
-
 if(ANDROID)
   # logging.h on Android needs llog to link in Android logging.
   iree_select_compiler_opts(_IREE_LOGGING_LINKOPTS
     CLANG_OR_GCC
       "-llog"
-  )
-endif()
-
-# TODO(benvanik): remove the ABSL usage here; we aren't abseil.
-If(${IREE_ENABLE_THREADING})
-  iree_select_compiler_opts(_IREE_ABSL_LINKOPTS
-    ALL
-      "${ABSL_DEFAULT_LINKOPTS}"
   )
 endif()
 
@@ -321,7 +304,6 @@ iree_select_compiler_opts(IREE_DEFAULT_LINKOPTS
   CLANG_OR_GCC
     # Required by all modern software, effectively:
     "-lm"
-    ${_IREE_PTHREADS_LINKOPTS}
     ${_IREE_LOGGING_LINKOPTS}
   MSVC
     "-natvis:${CMAKE_SOURCE_DIR}/iree/iree.natvis"
