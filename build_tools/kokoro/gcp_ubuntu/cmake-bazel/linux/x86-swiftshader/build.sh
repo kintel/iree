@@ -35,7 +35,7 @@ echo "Initializing submodules"
 pushd integrations/tensorflow
 BAZEL_CMD=(bazel --noworkspace_rc --bazelrc=build_tools/bazel/iree-tf.bazelrc)
 BAZEL_BINDIR="$(${BAZEL_CMD[@]?} info bazel-bin)"
-"${BAZEL_CMD[@]?}" build --config=generic_clang //iree_tf_compiler:all
+"${BAZEL_CMD[@]?}" build -s --config=generic_clang //iree_tf_compiler:all
 popd
 
 CMAKE_BUILD_DIR="$HOME/iree/build/tf"

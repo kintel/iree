@@ -16,7 +16,7 @@
 function docker_setup() {
     # Make the source repository available and launch containers in that
     # directory.
-    local workdir="${KOKORO_ARTIFACTS_DIR?}/github/iree"
+    local workdir="$HOME/code/IREE/iree"
     DOCKER_RUN_ARGS=(
       --volume="${workdir?}:${workdir?}"
       --workdir="${workdir?}"
@@ -48,7 +48,7 @@ function docker_setup() {
     # such that they don't contain the information about normal users and we
     # want these scripts to be runnable locally for debugging.
     # Instead we dump the results of `getent` to some fake files.
-    local fake_etc_dir="${KOKORO_ROOT?}/fake_etc"
+    local fake_etc_dir="$HOME/code/IREE/fake_etc"
     mkdir -p "${fake_etc_dir?}"
 
     local fake_group="${fake_etc_dir?}/group"
@@ -76,7 +76,7 @@ function docker_setup() {
     #      turns out that makes a huge difference in performance for Bazel
     #      running with local execution (not with RBE) because it is IO bound at
     #      64 cores.
-    local fake_home_dir="${KOKORO_ROOT?}/fake_home"
+    local fake_home_dir="$HOME/code/IREE/fake_home"
     mkdir -p "${fake_home_dir}"
 
     DOCKER_RUN_ARGS+=(
